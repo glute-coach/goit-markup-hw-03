@@ -33,7 +33,6 @@ ul {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: tomato;
 }
 
 /* Основные заголовки цвет */
@@ -48,9 +47,20 @@ ul {
 }
 
 /* хедер */
-.site-nav .link {
-    color: var(--primary-text-color);
+.page-header {
+    display: flex;
+    align-items: center;
+}
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    
+}
+.site-nav .link {
+    display: inline-block;
+
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -65,6 +75,15 @@ ul {
 
 .site-nav .link.current {
     color: var(--accent-color);
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 80px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .container {
@@ -90,6 +109,17 @@ outline: 2px solid tomato;
 .contacts-link:focus {
     color: var(--accent-color);
 }
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 
 /* Герой */
 .hero {
@@ -137,6 +167,7 @@ outline: 2px solid tomato;
 }
 
 .feature-list {
+    display: flex;
     padding-top: 94px;
 }
 
@@ -184,6 +215,10 @@ outline: 2px solid tomato;
 
 .section.work-section {
     padding-top: 0;
+}
+
+.work-list {
+    display: flex;
 }
 
 
