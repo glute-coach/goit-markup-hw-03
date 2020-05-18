@@ -300,19 +300,8 @@ outline: 2px solid tomato;
 }
 
 /* футер */
-.footer .container{
-    background-color: #2F303A;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.socials {
-    display: flex;
-}
-
-.socials .item {
-    display: flex;
+footer {
+    background-color: black;
 }
 
 .footer-address {
@@ -358,6 +347,7 @@ outline: 2px solid tomato;
     text-align: center;
     letter-spacing: 0.03em;
 }
+
 
 /* Портфолио */
 /* Button */
