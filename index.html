@@ -11,24 +11,19 @@
   <body>
     <header>
       <div class="container page-header">
-        <nav>
-          <div class="main-nav">
-            <div class="logo">
-              <a href="./index.html">
+        <nav class="main-nav">
+            <!-- <div class="logo"> -->
+              <a href="./index.html" class="logo">
                 <img src="./images/Web Studio.svg" alt="Логотип компании" width="153" height="31"/>
               </a>
-            </div>
-            <!-- <div class="site-nav"> -->
+            
               <ul class="site-nav">
                 <li class="item"><a href="./index.html" class="link current">Студия</a></li>
                 <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li class="item"><a href="#" class="link">Контакты</a></li>
               </ul>
-            <!-- </div> -->
-          </div>
         </nav>
         
-        <!-- <div class="contacts"> -->
           <ul class="contacts">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="contacts-link">
@@ -41,7 +36,6 @@
               </a>
             </li>
           </ul>
-        <!-- </div> -->
       </div>
     </header>
 
@@ -105,21 +99,21 @@
           <ul class="work-list">
             <li class="item">
               <a href="#">
-                <img src="./images/notebook.jpg" alt="Включенный ноутбук" width="380" height="294"/>
+                <img src="./images/notebook.jpg" alt="Включенный ноутбук" width="370" height="294"/>
               </a>
 
               <h3 class="title">Десктопные приложения</h3>
             </li>
             <li class="item">
               <a href="#">
-                <img src="./images/smartphone.jpg" alt="Смартфон" width="380" height="294"/>
+                <img src="./images/smartphone.jpg" alt="Смартфон" width="370" height="294"/>
               </a>
 
               <h3 class="title">Мобильные приложения</h3>
             </li>
             <li class="item">
               <a href="#">
-                <img src="./images/desktop.jpg" alt="Десктоп" width="380" height="294"/>
+                <img src="./images/desktop.jpg" alt="Десктоп" width="370" height="294"/>
               </a>
 
               <h3 class="title">Дизайнерские решения</h3>
@@ -136,7 +130,7 @@
           <ul class="team-list">
             <li class="item">
               <a href="#">
-                <img src="./images/John.png" alt="Фото Джона" width="278" height="260"/>
+                <img src="./images/John.png" alt="Фото Джона" width="270" height="260"/>
               </a>
 
               <h3 class="title">John Smith</h3>
@@ -167,7 +161,7 @@
             </li>
             <li class="item">
               <a href="#">
-                <img src="./images/Marta Stewart.png" alt="Фото Марты" width="278" height="260"/>
+                <img src="./images/Marta Stewart.png" alt="Фото Марты" width="270" height="260"/>
               </a>
 
               <h3 class="title">Marta Stewart</h3>
@@ -198,7 +192,7 @@
             </li>
             <li class="item">
               <a href="#">
-                <img src="./images/Robert Jakis.png" alt="Фото Роберта" width="278" height="260"/>
+                <img src="./images/Robert Jakis.png" alt="Фото Роберта" width="270" height="260"/>
               </a>
 
               <h3 class="title">Robert Jakis</h3>
@@ -229,7 +223,7 @@
             </li>
             <li class="item">
               <a href="#">
-                <img src="./images/Martin Doe.png" alt="Фото Мартина" width="278" height="260"/>
+                <img src="./images/Martin Doe.png" alt="Фото Мартина" width="270" height="260"/>
               </a>
 
               <h3 class="title">Martin Doe</h3>
@@ -302,52 +296,54 @@
       </section>
     </main>
 
-    <footer class="container">
-        
-          <div class="footer-logo">
-            <a href="#">
-              <img src="./images/Web Studio2.svg" alt="Логотип компании" width="153" height="31"/>
-            </a>
-          </div>
-          <address>
-            <div class="address-list"></div>
+    <footer>
+      <div class="container page-footer">
+        <div class="address-container">
+          <a href="#" class="footer-logo">
+            <img src="./images/Web Studio2.svg" alt="Логотип компании" width="153" height="31"/>
+          </a>
+
+          <address class="address-list">
               <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-              <a href="mailto:info@example.com" class="footer-link">info@example.com</a>
+              <a href="mailto:info@example.com" class="footer-link mail-link">info@example.com</a>
               <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
-            </div>
           </address>
-        
+        </div>
+      
+        <div class="socials-container">
           <b class="footer-title">присоединяйтесь</b>
 
           <ul class="socials">
-            <li class="item">
+            <li class="socials-item">
               <a href="#" aria-label="Ссылка на Instagram">
-                <img src="./images/insta2.svg" alt="Инстаграмм">
+                <img src="./images/insta2.svg" alt="Инстаграмм" width="44" height="44">
               </a>
             </li>
-            <li class="item">
+            <li class="socials-item">
               <a href="#" aria-label="Ссылка на Twitter">
-                <img src="./images/twitter2.svg" alt="Твиттер">
+                <img src="./images/twitter2.svg" alt="Твиттер" width="44" height="44">
               </a>
             </li>
-            <li class="item">
+            <li class="socials-item">
               <a href="#" aria-label="Ссылка на Facebook">
-                <img src="./images/facebook2.svg" alt="Фейсбук">
+                <img src="./images/facebook2.svg" alt="Фейсбук" width="44" height="44">
               </a>
             </li>
-            <li class="item">
+            <li class="socials-item">
               <a href="#" aria-label="Ссылка на LinkedIn">
-                <img src="./images/linkedin2.svg" alt="Линкедин">
+                <img src="./images/linkedin2.svg" alt="Линкедин" width="44" height="44">
               </a>
             </li>
           </ul>
+        </div>
 
-        <div class="subs-item">
-          <b class="footer-title">подписаться на рассылку</b>
-          <a href="#" class="button"> Подписаться</a>
+        <div class="subscribe">
+          <b class="subscribe-title">подписаться на рассылку</b>
+          <a href="#" class="button footer-button"> Подписаться</a>
         </div>
 
         <p class="copy">2020 | Developed by GoIT Students</p>
+      </div>  
     </footer>
   </body>
 </html>

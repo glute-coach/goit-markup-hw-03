@@ -8,6 +8,15 @@
 /* цвет фона футера #2F303A */
 /* цвет ссылок футера rgba(255, 255, 255, 0.6) */
 /* цвет подписи rgba(255, 255, 255, 0.4) */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
 :root {
     --primary-text-color: #212121;
@@ -26,14 +35,25 @@ body {
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
+
+/* a {
+    display: block;
+} */
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    outline: 2px solid tomato;
+    }
 
 /* Основные заголовки цвет */
 .section-title {
@@ -55,8 +75,8 @@ ul {
 .main-nav {
     display: flex;
     align-items: center;
-    
 }
+
 .site-nav .link {
     display: inline-block;
 
@@ -80,19 +100,12 @@ ul {
 .site-nav {
     display: flex;
     margin-left: 80px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
-}
-
-.container {
-margin-left: auto;
-margin-right: auto;
-width: 1230px;
-padding-right: 15px;
-padding-left: 15px;
-outline: 2px solid tomato;
 }
 
 .contacts-link {
@@ -166,7 +179,10 @@ outline: 2px solid tomato;
 
 .feature-list {
     display: flex;
-    padding-top: 94px;
+    /* padding-top: 94px; */
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .feature-list .item:not(:last-child) {
@@ -200,7 +216,6 @@ outline: 2px solid tomato;
 .work-list .title {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 0;
     
     color: var(--primary-white-color);
     background-color: var(--secondary-text-color);
@@ -215,12 +230,10 @@ outline: 2px solid tomato;
     margin-bottom: 50px;
 }
 
-.section.work-section {
-    padding-top: 0;
-}
-
 .work-list {
     display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .work-list .item:not(:last-child) {
@@ -235,6 +248,8 @@ outline: 2px solid tomato;
 .team-list {
     display: flex;
     text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .team-list .item:not(:last-child) {
@@ -267,13 +282,10 @@ outline: 2px solid tomato;
     letter-spacing: 0.03em;
 }
 
-.team-list a {
-    display: inline-block;
-}
-
 .social-list {
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 
 .team-list .social-item:not(:last-child) {
@@ -287,11 +299,13 @@ outline: 2px solid tomato;
 
 .customer-list {
     display: flex;
-    /* justify-content: center; */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .customer-list .item {
-    width: 175px;
+    width: 170px;
     align-content: center;
 }
 
@@ -301,12 +315,26 @@ outline: 2px solid tomato;
 
 /* футер */
 footer {
-    background-color: black;
+    background-color: #2F303A;
+}
+
+.address-container {
+    margin-right: 69px;
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+    padding-top: 48px;
 }
 
 .footer-address {
-    color: var(--primary-white-color);
+    margin-bottom: 9px;
+    margin-top: 0;
 
+    color: var(--primary-white-color);
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -315,8 +343,8 @@ footer {
 }
 
 .footer-title {
-    color: var(--primary-white-color);
 
+    color: var(--primary-white-color);
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
@@ -327,7 +355,6 @@ footer {
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
-
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -336,8 +363,30 @@ footer {
     text-decoration: none;
 }
 
+.footer-link.mail-link {
+    margin-bottom: 9px;
+}
+
+.subscribe-title {
+    color: var(--primary-white-color);
+}
+
+.subscribe {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 56px;
+}
+
+.footer-button {
+    display: block;
+
+    width: 200px;
+    height: 50px;
+}
+
 .copy {
     margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: 21px;
 
     color: rgba(255, 255, 255, 0.4);
@@ -348,6 +397,12 @@ footer {
     letter-spacing: 0.03em;
 }
 
+.socials {
+    padding-left: 0;
+    margin-top: 21px;
+    margin-bottom: 0;
+
+}
 
 /* Портфолио */
 /* Button */
